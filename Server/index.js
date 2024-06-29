@@ -20,7 +20,7 @@ app.use('/api/countries', countryRoutes);
 app.use('/api/favorites', favoriteRoutes);
 app.use('/api/history', historyRoutes);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
