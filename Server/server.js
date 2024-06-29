@@ -15,10 +15,12 @@ connectDB();
 app.use(express.json());
 app.use(cors());
 
+
 app.use('/api/auth', authRoutes);
 app.use('/api/countries', countryRoutes);
 app.use('/api/favorites', favoriteRoutes);
 app.use('/api/history', historyRoutes);
+
 
 const PORT = process.env.PORT || 3000;
 
